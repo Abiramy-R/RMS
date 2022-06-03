@@ -74,7 +74,7 @@ const ExamView = () => {
                     <div style={{ textAlign: "center", marginBottom: 30 }}>
                         {userType === "admin" && (
                             <Link to="/services/exams/new">
-                                <button className="custom_button">Add New Exam</button>
+                                <button className="custom_button">Add New Topic</button>
                             </Link>
                         )}
                     </div>
