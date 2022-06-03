@@ -38,13 +38,13 @@ const JobSave = (props) => {
         })
         .then((res) => {
           if (res.data.auth === false) {
-            setError("You Are not Authorized to Create Jobs !");
+            setError("You Are not Authorized to Create Templates !");
             setIsUploaded(false);
             setTimeout(() => {
               dispatch(logout());
             }, 300);
           } else if (res.data.fetch === false) {
-            setError("No matching Job found ! redirecting to portal");
+            setError("No matching Template found ! redirecting to portal");
             setIsUploaded(false);
             setTimeout(() => {
               history.replace("/services/job_portal");
@@ -70,15 +70,15 @@ const JobSave = (props) => {
 
     if (!jobname.trim() || jobname.length < 6) {
       setIsUploaded(false);
-      setError("Job Name should be more longer");
+      setError("Template Name should be more longer");
       return;
     } else if (!companyname.trim() || companyname.length < 4) {
       setIsUploaded(false);
-      setError("Company Name should be more longer");
+      setError("Category Name should be more longer");
       return;
     } else if (!jobdetails.trim() || jobdetails.length < 200) {
       setIsUploaded(false);
-      setError("Give more details about the job");
+      setError("Give more details about the template");
       return;
     }
 
@@ -101,11 +101,11 @@ const JobSave = (props) => {
     setBtn("SAVING...");
     axios
       .post("http://localhost:5000/add_job", job, {
-        headers: { Authorization: "lmsvalidation " + token },
+        headers: { Authorization: "rmsvalidation " + token },
       })
       .then((res) => {
         if (res.data.auth === false) {
-          setError("You Are not Authorized to Create Jobs !");
+          setError("You Are not Authorized to Create Templates !");
           setIsUploaded(false);
           setTimeout(() => {
             dispatch(logout());
@@ -152,7 +152,7 @@ const JobSave = (props) => {
         <ErrorPopup error={error} clickedHandler={clickedHandler} />
       )}
       {success && <Success redirect={onRedirect} />}
-      <h2 className={classes.title}>Add Job</h2>
+      <h2 className={classes.title}>Add Template</h2>
       <hr className={classes.line}></hr>
       <form
         enctype="multipart/form-data"
@@ -160,7 +160,7 @@ const JobSave = (props) => {
         onSubmit={onJobSubmit}
       >
         <label htmlFor="name" className={classes.lables}>
-          Job Name :
+          Template Name :
         </label>
         <br />
         <input
@@ -174,7 +174,7 @@ const JobSave = (props) => {
         ></input>
 
         <label htmlFor="company" className={classes.lables}>
-          Company Name :
+          Template Category :
         </label>
         <br />
         <input
@@ -202,7 +202,7 @@ const JobSave = (props) => {
 
         <label htmlFor="poster" className={classes.lables}>
           {id && <img className={classes.posterView} src={jobPoster} />}
-          Job Poster :
+          Template Poster :
         </label>
         <br />
 

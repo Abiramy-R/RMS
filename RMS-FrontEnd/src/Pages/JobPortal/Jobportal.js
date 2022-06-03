@@ -23,7 +23,7 @@ const JobPortal = () => {
       })
       .then((res) => {
         if (res.data.error) {
-          setErrorMsg("no jobs available");
+          setErrorMsg("no Template available");
           setError(true);
           setLoaded(true);
         } else if (res.data.auth === false) {
@@ -46,7 +46,7 @@ const JobPortal = () => {
   return (
     <>
       {isError && <ErrorPopup error={errorMsg} clickedHandler={hideError} />}
-      <div className={classes.title}>JOB PORTAL</div>
+      <div className={classes.title}>Template PORTAL</div>
       <div className={classes.jobCard}>
         {loaded ? (
           jobs.map((row) => {
