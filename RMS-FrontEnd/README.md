@@ -1,1 +1,1 @@
-itp project
+Application Framework Project
