@@ -40,7 +40,7 @@ function NewExam() {
             }}
         >
             <form onSubmit={handleSubmit} className="custom_form">
-                <h2>Add New Exam</h2>
+                <h2>Add New Project</h2>
                 <div style={{ textAlign: "left", paddingLeft: "14%" }}>Exam Name</div>
                 <input value={values.name} required name="name" onChange={handleChange} className="form_control" type="text" placeholder="Exam Name" />
                 <br />

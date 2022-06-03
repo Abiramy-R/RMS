@@ -28,7 +28,7 @@ const Services = () => {
                 <div className={classes.links}>EXAMS</div>
             </Link>
             <Link to="/services/exam_marks">
-                <div className={classes.links}>EXAM MARKS</div>
+                <div className={classes.links}>PROJECT MARKS</div>
             </Link>
         </div>
     );

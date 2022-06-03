@@ -52,7 +52,7 @@ const ExamViewMark = () => {
                         <thead>
                             <tr style={{ height: 50, background: "#e5e4e4" }}>
                                 <td>Id</td>
-                                <td align="center">Subject</td>
+                                <td align="center">Project</td>
                                 <td align="center">Index Number</td>
                                 <td align="center">Marks</td>
                                 {userType === "admin" && <td align="center">Action</td>}
@@ -85,7 +85,7 @@ const ExamViewMark = () => {
                     {userType === "admin" && (
                         <div style={{ textAlign: "center", marginBottom: 30, marginTop: 20 }}>
                             <Link to="/services/exam_marks/new">
-                                <button className="custom_button">Add New Exam Marks</button>
+                                <button className="custom_button">Add New Project Marks</button>
                             </Link>
                             <button onClick={() => generatePDF(exams)} className="custom_button" style={{ marginLeft: 20 }}>
                                 Download as PDF

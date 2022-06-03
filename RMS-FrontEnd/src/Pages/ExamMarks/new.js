@@ -53,7 +53,7 @@ function NewExamMark() {
         >
             <form onSubmit={handleSubmit} className="custom_form">
                 <h2>Add Mark</h2>
-                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Choose Subject</div>
+                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Choose Project</div>
                 <select
                     style={{ width: "72%" }}
                     className="form_control"

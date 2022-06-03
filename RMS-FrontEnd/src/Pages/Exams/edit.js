@@ -54,7 +54,7 @@ function EditExam(props) {
             }}
         >
             <form onSubmit={handleSubmit} className="custom_form">
-                <h2>Edit Exam</h2>
+                <h2>Edit Project</h2>
                 <div style={{ textAlign: "left", paddingLeft: "14%" }}>Exam Name</div>
                 <input value={values.name} required name="name" onChange={handleChange} className="form_control" type="text" placeholder="Exam Name" />
                 <br />
