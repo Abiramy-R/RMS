@@ -2,6 +2,8 @@ import classes from "./Services.module.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
+// Service page link to the following pages:
+
 const Services = () => {
     const type = useSelector((state) => state.loging.type);
     const id = useSelector((state) => state.loging.userID);
@@ -24,6 +26,8 @@ const Services = () => {
             <a href="services/timetable">
                 <div className={classes.links}>TIMETABLE</div>
             </a>
+
+
             <Link to="/services/exams">
                 <div className={classes.links}>Project Topic</div>
             </Link>
