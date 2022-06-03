@@ -46,7 +46,7 @@ const JobPortal = () => {
   return (
     <>
       {isError && <ErrorPopup error={errorMsg} clickedHandler={hideError} />}
-      <div className={classes.title}>JOB PORTAL</div>
+      <div className={classes.title}>PROJECT SUBMISSIONS</div>
       <div className={classes.jobCard}>
         {loaded ? (
           jobs.map((row) => {
