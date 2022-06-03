@@ -51,10 +51,10 @@ const ExamView = () => {
                         {exams.map((exam, key) => (
                             <div key={key} className="card">
                                 <div>
-                                    <h4>Subject: {exam.name}</h4>
-                                    <h4>Professor: {exam.professor}</h4>
-                                    <h4>Start Date: {exam.startDate}</h4>
-                                    <h4>End Date: {exam.endDate}</h4>
+                                    <h4>Project Name: {exam.name}</h4>
+                                    <h4>Leader Name: {exam.professor}</h4>
+                                    <h4>Project Topic: {exam.startDate}</h4>
+                                    <h4>Project Category: {exam.endDate}</h4>
                                 </div>
                                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
                                     {userType === "admin" && (

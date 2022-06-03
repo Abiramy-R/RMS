@@ -10,7 +10,7 @@ const Services = () => {
             <h2 className={classes.title}>Services</h2>
             <hr className={classes.line}></hr>
             <a href="../services/job_portal">
-                <div className={classes.links}>JOB PORTAL</div>
+                <div className={classes.links}>Templates</div>
             </a>
             <a href="services/digital_library">
                 <div className={classes.links}>DIGITAL LIBRARY</div>
@@ -25,7 +25,7 @@ const Services = () => {
                 <div className={classes.links}>TIMETABLE</div>
             </a>
             <Link to="/services/exams">
-                <div className={classes.links}>EXAMS</div>
+                <div className={classes.links}>Project Topic</div>
             </Link>
             <Link to="/services/exam_marks">
                 <div className={classes.links}>EXAM MARKS</div>

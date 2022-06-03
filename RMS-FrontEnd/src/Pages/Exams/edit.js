@@ -55,17 +55,17 @@ function EditExam(props) {
         >
             <form onSubmit={handleSubmit} className="custom_form">
                 <h2>Edit Exam</h2>
-                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Exam Name</div>
-                <input value={values.name} required name="name" onChange={handleChange} className="form_control" type="text" placeholder="Exam Name" />
+                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Group Name</div>
+                <input value={values.name} required name="name" onChange={handleChange} className="form_control" type="text" placeholder="Group Name" />
                 <br />
-                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Proffessor Name</div>
-                <input value={values.professor} required name="professor" onChange={handleChange} className="form_control" type="text" placeholder="Professor Name" />
+                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Leader Name</div>
+                <input value={values.professor} required name="professor" onChange={handleChange} className="form_control" type="text" placeholder="Leader Name" />
                 <br />
-                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Exam Start Date</div>
-                <input value={values.startDate} required name="startDate" onChange={handleChange} className="form_control" type="date" placeholder="Start Date" />
+                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Project Topic</div>
+                <input value={values.startDate} required name="startDate" onChange={handleChange} className="form_control" type="text" placeholder="Project Topic" />
                 <br />
-                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Exam End Date</div>
-                <input value={values.endDate} required name="endDate" onChange={handleChange} className="form_control" type="date" placeholder="End Date" />
+                <div style={{ textAlign: "left", paddingLeft: "14%" }}>Project Category</div>
+                <input value={values.endDate} required name="endDate" onChange={handleChange} className="form_control" type="text" placeholder="Project Category" />
                 <br />
                 <button type="submit" style={{ marginTop: 15 }} className="custom_button">
                     Save
