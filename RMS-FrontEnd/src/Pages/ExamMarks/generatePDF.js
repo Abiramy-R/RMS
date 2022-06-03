@@ -5,14 +5,14 @@ const generatePDF = marks => {
   const doc = new jsPDF();
 
   // define the columns we want and their titles
-  const tableColumn = ["Id", "Subject", "Index Number", "Marks"];
+  const tableColumn = ["Project", "Index Number", "Marks"];
   // define an empty array of rows
   const tableRows = [];
 
   // for each ticket pass all its data into an array
   marks.forEach(mark => {
     const markData = [
-      mark._id,
+      // mark._id,
       mark.subject,
       mark.indexNumber,
       mark.marks,

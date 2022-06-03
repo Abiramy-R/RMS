@@ -51,7 +51,7 @@ const ExamViewMark = () => {
                     <table style={{ background: "white", width: "100%" }}>
                         <thead>
                             <tr style={{ height: 50, background: "#e5e4e4" }}>
-                                <td>Id</td>
+                                {/* <td>Id</td> */}
                                 <td align="center">Project</td>
                                 <td align="center">Index Number</td>
                                 <td align="center">Marks</td>
@@ -61,7 +61,7 @@ const ExamViewMark = () => {
                         <tbody>
                             {exams.map((exam) => (
                                 <tr key={exam.id} style={{ height: 40 }}>
-                                    <td>{exam._id}</td>
+                                    {/* <td>{exam._id}</td> */}
                                     <td align="center">{exam.subject}</td>
                                     <td align="center">{exam.indexNumber}</td>
                                     <td align="center">{exam.marks}</td>
