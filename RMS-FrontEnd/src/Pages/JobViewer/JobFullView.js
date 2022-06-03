@@ -18,11 +18,11 @@ const JobFullView = (props) => {
   useEffect(() => {
     axios
       .get("http://localhost:5000/get_job?id=" + id, {
-        headers: { Authorization: "lmsvalidation " + token },
+        headers: { Authorization: "rmsvalidation " + token },
       })
       .then((res) => {
         if (res.data.fetch === false) {
-          setText("No Jobs Found !")
+          setText("No Template Found !")
         } else {
           setJob(res.data);
           setLoaded(true);
