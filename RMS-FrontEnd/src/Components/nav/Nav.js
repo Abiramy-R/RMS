@@ -89,7 +89,7 @@ const Nav = () => {
                   className={classes.links}
                   activeClassName={classes.activelink}
                 >
-                  My Courses
+                  My Projects
                 </NavLink>
               </li>
             </>
