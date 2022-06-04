@@ -49,7 +49,7 @@ const BurgerNavi = (props) => {
                 className={classes.burger__link}
                 onClick={onclickHandler}
               >
-                My Courses
+                My Projects
               </NavLink>
               <NavLink
                 to="/my-profile/s"
