@@ -27,8 +27,6 @@ const ContactUs=require("./routes/ContactUs");
 const StudentPortal=require("./routes/StudentPortal");
 const TimeTable=require("./routes/Timetable");
 
-
-
 app.use(isAuth);
 app.use(BodyParser.urlencoded({ extended: false }));
 app.use(express.json());
@@ -75,10 +73,6 @@ app.use("/", JobRoutes);
 app.use("/ForumManagement" , ForumManagement);
 app.use("/exams" , ExamRoutes);
 app.use("/exMarks" , ExMarkRoutes);
-
-
-
-
 
 db.initDb((err, db) => {
   if (err) {

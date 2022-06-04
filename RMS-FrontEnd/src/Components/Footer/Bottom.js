@@ -5,12 +5,12 @@ const Bottom = () => {
     <div className={classes.footer_copyR}>
       <ul>
         <li>
-          <a href="">https://LMS.com</a>
+          <a href="">https://RMS.com</a>
         </li>
         <li>
-          <a href="">example@gmail.com</a>
+          <a href="">rms@gmail.com</a>
         </li>
-        <li>Copyright 2018 © SLIIT. All Rights Reserved.</li>
+        <li>Copyright 2022 © SLIIT. All Rights Reserved.</li>
       </ul>
     </div>
   );

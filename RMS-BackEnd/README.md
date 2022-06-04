@@ -1,2 +1,3 @@
-# LMS
-4th semester ITP module project backend
+# RMS
+
+Research Management Tool
